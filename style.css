@@ -1,0 +1,394 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f8f8;
+    margin: 0;
+    padding: 0;
+}
+
+.productos-1, h2{
+    text-align: center;
+    margin: 20px;
+    font-weight: bold;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.text{
+ margin-top: 50px;
+}
+
+header {
+    background-color: #ff6f61;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+nav {
+    background-color: #ff847c;
+    overflow: hidden;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    float: left;
+}
+
+nav ul li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    background-color: #dd614a;
+}
+
+
+#quienes-somos, p {
+    margin: 20px;
+    padding: 20px;
+    margin-top: 10px;
+    text-align: center;
+
+}
+
+.productos {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Crea tres columnas iguales */
+    gap: 10px; /* Espacio entre los contenedores */
+}
+
+.productos, img .ofertas, img{
+    width: 200px;
+    height: 200px;
+}
+
+
+h2 {
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.banner {
+    position: relative;
+    width: 100%;
+    height: 400px;
+    overflow: hidden;
+}
+
+.banner img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.banner h1, .banner p {
+    position: absolute;
+    color: white;
+    text-align: center;
+    width: 100%;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.banner h1 {
+    font-size: 50px;
+    margin: 0;
+}
+
+.banner p {
+    font-size: 20px;
+}
+
+.hero {
+    background-image: url('pasteles.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 400px;
+    color: white;
+    text-align: center;
+    padding: 100px 20px;
+    box-sizing: border-box;
+}
+
+.hero h1 {
+    font-size: 50px;
+    margin: 0;
+}
+
+.container {
+    padding: 20px;
+    align-items: center;
+}
+
+.section {
+    background-color: white;
+    margin: 20px 0;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.section h2 {
+    margin-top: 0;
+}
+
+.productos {
+    padding: 20px;
+    text-align: center;
+}
+
+.productos-grid {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.productos {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 10px;
+    background-color: #fff;
+    max-width: 200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+    
+.productos img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin: 10px;   
+    position: relative;
+    flex: 1;
+}
+
+.ofertas {
+    padding: 20px;
+    text-align: center;
+}
+
+.ofertas-grid {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.ofertas {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 10px;
+    background-color: #fff;
+    max-width: 200px;
+    text-align: center;
+}
+
+.ofertas img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin: 10px;
+}
+
+
+
+
+footer {
+    background-color: #ff6f61;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    width: 100%;
+    bottom: 0;
+}
+
+.form-group {    /*formulario*/
+    margin-bottom: 15px;
+    align-items: center;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: #ff6f61;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #dd614a;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin: 20px 0;
+}
+
+.social-icons a {
+    text-decoration: none;
+    color: white;
+    font-size: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+.social-icons a.facebook {
+    background-color: #3b5998;
+}
+
+.social-icons a.twitter {
+    background-color: #00acee;
+}
+
+.social-icons a.instagram {
+    background-color: #e4405f;
+}
+
+.social-icons a:hover {
+    opacity: 0.7;
+}
+
+#suscripcion {
+    background-color: #f9f9f9;
+    padding: 40px;
+    margin: 20px 0;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#suscripcion h2 {
+    margin-bottom: 20px;
+    font-size: 28px;
+    color: #333;
+}
+
+#suscripcion .form-group {
+    margin-bottom: 20px;
+}
+
+#suscripcion .form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #555;
+}
+
+#suscripcion .form-group input,
+#suscripcion .form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+#suscripcion button {
+    background-color: #ff6f61;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#suscripcion button:hover {
+    background-color: #dd614a;
+}
+
+#contacto {
+    background-color: #f9f9f9;
+    padding: 40px;
+    margin: 20px 0;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#contacto h2 {
+    margin-bottom: 20px;
+    font-size: 28px;
+    color: #333;
+}
+
+#contacto p {
+    margin-bottom: 10px;
+    font-size: 16px;
+    color: #555;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.social-icons a {
+    text-decoration: none;
+    color: white;
+    font-size: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    transition: opacity 0.3s ease;
+}
+
+.social-icons a.facebook {
+    background-color: #3b5998;
+}
+
+.social-icons a.twitter {
+    background-color: #00acee;
+}
+
+.social-icons a.instagram {
+    background-color: #e4405f;
+}
+
+.social-icons a:hover {
+    opacity: 0.7;
+}
